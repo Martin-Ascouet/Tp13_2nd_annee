@@ -1,5 +1,5 @@
 class Node:
-    def __init__(self, val, left = None, right = None):
+    def __init__(self, val, left=None, right=None):
         self.__val = val
         self.__right = right
         self.__left = left
@@ -19,4 +19,5 @@ class Node:
     def SetLeft(self, left):
         self.__left = left
 
-
+    def __str__(self):
+        return str(self.__val)
